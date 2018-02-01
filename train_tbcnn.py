@@ -237,7 +237,8 @@ def main():
     # print len(embeddings_list)
 
     # def train_model(logdir, inputs, embeddings_list_url, node_map_url, epochs=EPOCHS, with_drop_out=1,device="0"):
-    train_model("logs/model2/","data/training_pairs_original.pkl","data/glove_embeddings_list.pkl", "data/NODE_MAP_GLOVE.pkl",EPOCHS, 1, "0")
+    # train_model("logs/model2/","data/training_pairs_original.pkl","data/glove_embeddings_list.pkl", "data/NODE_MAP_GLOVE.pkl",EPOCHS, 1, "0")
+    train_model(sys.argv[1],sys.argv[2],"data/glove_embeddings_list.pkl", "data/NODE_MAP_GLOVE.pkl",EPOCHS, 1, "0")
     
 
 
